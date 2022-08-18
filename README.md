@@ -2,11 +2,13 @@
 	
 ![Warp-Companion Logo](png/icon.png)
 	
-# Warp-Companion
+<h1>Warp-Companion</h1>
 
 </div>
 
 **Warp-Companion** is an extension, which synchronizes your VS-Code Theme with [Warp](https://warp.dev/).
+
+[**✨ Try it out now ✨**](https://marketplace.visualstudio.com/items?itemName=haack.warp-companion)
 
 ## How to use Warp-Companion
 
