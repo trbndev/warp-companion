@@ -1,5 +1,7 @@
 <div align="center">
 	
+![Warp-Companion Logo](png/icon.png)
+	
 # Warp-Companion
 
 </div>
