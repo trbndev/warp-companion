@@ -17,7 +17,7 @@ export async function welcomeMessage() {
 				'Learn more about it 🔗'
 			)
 			.then(() => {
-				vscode.env.openExternal(vscode.Uri.parse('https://github.com/trbnhck/warp-companion#issues'));
+				vscode.env.openExternal(vscode.Uri.parse('https://github.com/haackt/warp-companion#issues'));
 			});
 	}, 10000);
 }
