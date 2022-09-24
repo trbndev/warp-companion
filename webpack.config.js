@@ -3,7 +3,6 @@
 'use strict';
 
 const path = require('path');
-const htmlWebpackPlugin = require('html-webpack-plugin');
 
 //@ts-check
 /** @typedef {import('webpack').Configuration} WebpackConfig **/
@@ -45,11 +44,6 @@ const extensionConfig = {
 	infrastructureLogging: {
 		level: 'log', // enables logging required for problem matchers
 	},
-	plugins: [
-		new htmlWebpackPlugin({
-			template: 'src/webview.html',
-			filename: 'webview.html',
-		}),
-	],
+	plugins: [],
 };
 module.exports = [extensionConfig];

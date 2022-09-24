@@ -2,7 +2,7 @@
 	"name": "warp-companion",
 	"displayName": "warp-companion",
 	"description": "Warp-Companion synchronizes your VS-Code Theme with Warp ✨",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"icon": "png/icon.png",
 	"engines": {
 		"vscode": "^1.70.0"

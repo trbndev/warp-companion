@@ -37,7 +37,39 @@ export async function getColors(callback: any, kind?: number) {
 	const panel = vscode.window.createWebviewPanel('warp-companion', 'warp-companion-panel', vscode.ViewColumn.One, {
 		enableScripts: true,
 	});
-	panel.webview.html = readFileSync('./dist/webview.html').toString();
+	panel.webview.html = `<script>
+	const style = window.getComputedStyle(document.documentElement);
+	const vscode = acquireVsCodeApi();
+
+	vscode.postMessage({
+		background: style.getPropertyValue('--vscode-editor-background'),
+		accent: style.getPropertyValue('--vscode-button-background'),
+		foreground: style.getPropertyValue('--vscode-editor-foreground'),
+		details: '',
+		terminal_colors: {
+			normal: {
+				black: style.getPropertyValue('--vscode-terminal-ansiBlack'),
+				red: style.getPropertyValue('--vscode-terminal-ansiRed'),
+				green: style.getPropertyValue('--vscode-terminal-ansiGreen'),
+				yellow: style.getPropertyValue('--vscode-terminal-ansiYellow'),
+				blue: style.getPropertyValue('--vscode-terminal-ansiBlue'),
+				magenta: style.getPropertyValue('--vscode-terminal-ansiMagenta'),
+				cyan: style.getPropertyValue('--vscode-terminal-ansiCyan'),
+				white: style.getPropertyValue('--vscode-terminal-ansiWhite'),
+			},
+			bright: {
+				black: style.getPropertyValue('--vscode-terminal-ansiBrightBlack'),
+				red: style.getPropertyValue('--vscode-terminal-ansiBrightRed'),
+				green: style.getPropertyValue('--vscode-terminal-ansiBrightGreen'),
+				yellow: style.getPropertyValue('--vscode-terminal-ansiBrightYellow'),
+				blue: style.getPropertyValue('--vscode-terminal-ansiBrightBlue'),
+				magenta: style.getPropertyValue('--vscode-terminal-ansiBrightMagenta'),
+				cyan: style.getPropertyValue('--vscode-terminal-ansiBrightCyan'),
+				white: style.getPropertyValue('--vscode-terminal-ansiBrightWhite'),
+			},
+		},
+	});
+</script>`;
 
 	panel.webview.onDidReceiveMessage((colors) => {
 		if (!kind) {
