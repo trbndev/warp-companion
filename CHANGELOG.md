@@ -1,9 +1,9 @@
 # Change Log
 
-All notable changes to the "warp-companion" extension will be documented in this file.
+## 1.0.3
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+- Fix #1
 
-## [Unreleased]
+## [v1.0.0]
 
 - Initial release

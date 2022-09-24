@@ -2,13 +2,17 @@
 	"name": "warp-companion",
 	"displayName": "warp-companion",
 	"description": "Warp-Companion synchronizes your VS-Code Theme with Warp ✨",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"icon": "png/icon.png",
 	"engines": {
 		"vscode": "^1.70.0"
 	},
-	"categories": ["Other"],
-	"activationEvents": ["onStartupFinished"],
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onStartupFinished"
+	],
 	"main": "./dist/extension.js",
 	"scripts": {
 		"vscode:prepublish": "yarn run package",
