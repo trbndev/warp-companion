@@ -1,3 +1,4 @@
+> I'm currently in the process of reworking Warp-Themes and Warp-Companion. Stay tuned for future updated 🎉
 <div align="center">
 	
 ![Warp-Companion Logo](png/icon.png)
