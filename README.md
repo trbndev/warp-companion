@@ -1,4 +1,4 @@
-> I'm currently in the process of reworking Warp-Themes and Warp-Companion. Stay tuned for future updates 🎉
+> I currently don't have the time to maintain Warp-Themes. If you wish to take over this project, contact me via twitter.com/torben_haack
 <div align="center">
 	
 ![Warp-Companion Logo](png/icon.png)
